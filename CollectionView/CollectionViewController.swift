@@ -12,6 +12,9 @@ private let reuseIdentifier = "Cell"
 
 class CollectionViewController: UICollectionViewController {
 
+    @IBOutlet weak var movPoster: UIImageView!
+    
+    @IBOutlet weak var PosterName: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 

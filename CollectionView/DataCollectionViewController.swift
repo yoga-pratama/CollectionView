@@ -11,6 +11,8 @@ import UIKit
 private let reuseIdentifier = "dataCell"
 fileprivate let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
 
+fileprivate let Giphy = giphy()
+
 class DataCollectionViewController: UICollectionViewController {
 
     override func viewDidLoad() {
@@ -92,6 +94,16 @@ class DataCollectionViewController: UICollectionViewController {
 
 extension DataCollectionViewController : UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        //make loading icon
+        let activityIndicator = UIActivityIndicatorView(style: .gray)
+        textField.addSubview(activityIndicator)
+        activityIndicator.frame = textField.bounds
+        activityIndicator.startAnimating()
+        
+        Giphy.searchGiphy(textField.text!)
+        
+        activityIndicator.removeFromSuperview()
+        
         return true
     }
     

@@ -11,19 +11,23 @@ import UIKit
 
 /// for json
 struct dataStruct : Decodable {
-    let data : innerData
+    let data : [innerData]
 }
 
 struct innerData : Decodable {
     let id : String
     let url: String
     let title : String
-    let imageData : imageData
+    let images : imageData
 }
 
 
 struct  imageData :Decodable {
-   let  fixed_height_still : String
+   let  fixed_height_still : imageURL
+}
+
+struct imageURL : Decodable {
+  let  url : String
 }
 
 

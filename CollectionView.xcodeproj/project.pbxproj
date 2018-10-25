@@ -11,6 +11,8 @@
 		0A9CCC8F217EB05000A07AC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A9CCC8D217EB05000A07AC5 /* Main.storyboard */; };
 		0A9CCC91217EB05200A07AC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A9CCC90217EB05200A07AC5 /* Assets.xcassets */; };
 		0A9CCC94217EB05200A07AC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A9CCC92217EB05200A07AC5 /* LaunchScreen.storyboard */; };
+		0AD0F1EA218009D1001A91B5 /* DataCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0F1E9218009D1001A91B5 /* DataCollectionViewController.swift */; };
+		0AD0F1EC2180138A001A91B5 /* giphy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0F1EB2180138A001A91B5 /* giphy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		0A9CCC90217EB05200A07AC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A9CCC93217EB05200A07AC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A9CCC95217EB05200A07AC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AD0F1E9218009D1001A91B5 /* DataCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollectionViewController.swift; sourceTree = "<group>"; };
+		0AD0F1EB2180138A001A91B5 /* giphy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = giphy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				0A9CCC90217EB05200A07AC5 /* Assets.xcassets */,
 				0A9CCC92217EB05200A07AC5 /* LaunchScreen.storyboard */,
 				0A9CCC95217EB05200A07AC5 /* Info.plist */,
+				0AD0F1E9218009D1001A91B5 /* DataCollectionViewController.swift */,
+				0AD0F1EB2180138A001A91B5 /* giphy.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -132,6 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AD0F1EC2180138A001A91B5 /* giphy.swift in Sources */,
+				0AD0F1EA218009D1001A91B5 /* DataCollectionViewController.swift in Sources */,
 				0A9CCC8A217EB05000A07AC5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

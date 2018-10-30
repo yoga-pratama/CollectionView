@@ -100,7 +100,14 @@ extension DataCollectionViewController : UITextFieldDelegate{
         activityIndicator.frame = textField.bounds
         activityIndicator.startAnimating()
         
-        Giphy.searchGiphy(textField.text!)
+        Giphy.searchGiphy(textField.text!) {  result , error in
+            
+            print("Entering Result")
+            print(result)
+        }
+           
+            
+        
         
         activityIndicator.removeFromSuperview()
         

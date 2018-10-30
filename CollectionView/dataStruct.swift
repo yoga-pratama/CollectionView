@@ -32,8 +32,7 @@ struct imageURL : Decodable {
 
 
 // for internal object
-struct gifImage{
-    let gif : UIImage
-    let id  : String
-    let title : String
+struct giphySearchResult{
+    let searchTerm : String
+    let Gipgyresults : [giphyGif]
 }
